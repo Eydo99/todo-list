@@ -39,7 +39,12 @@ add.addEventListener("click", addtask)
 let clear=()=>{
 
 
-    newtask.innerHTML="";
+
+    if(confirm("do you want to clear all")){
+
+        newtask.innerHTML="";
+
+    }
     count=newtask.childElementCount;
     counttask.innerText=count;
     if(count==0){
